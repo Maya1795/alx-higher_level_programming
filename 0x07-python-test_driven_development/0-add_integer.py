@@ -7,14 +7,11 @@ def add_integer(a, b=98):
     Aegs:
         a: first int
         b: second int
-
     Raises:
        TypeError: if a, b are not int , float
-    
     Returns:
         the sum of 2 int
     """
-
     if type(a) not in (int, float):
         raise TypeError('a must be an integer')
     if type(b) not in (int, float):
