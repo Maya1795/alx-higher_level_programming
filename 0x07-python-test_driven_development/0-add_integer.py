@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module for add int method"""
 
+
 def add_integer(a, b=98):
     """add 2 int.
 
@@ -17,6 +18,7 @@ def add_integer(a, b=98):
     if type(b) not in (int, float):
         raise TypeError('b must be an integer')
     return int(a) + int(b)
+
 
 if __name__ == "__main__":
     import doctest
