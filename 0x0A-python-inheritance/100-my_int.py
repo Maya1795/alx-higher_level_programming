@@ -8,7 +8,7 @@ class MyInt(int):
         '''create new inst.'''
         return super(MyInt, cls).__new__(c, *args, **kargs)
 
-    def __equailty__(self, o):
+    def __eq__(self, o):
         '''let be !='''
         return int(self) != o
 
