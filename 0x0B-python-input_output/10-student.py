@@ -13,13 +13,13 @@ class Student:
     def to_json(self):
         '''return dic'''
         try:
-            for a in attrs:
-                if type(a) is not str:
+            for attr in attrs:
+                if type(attr) is not str:
                     return self.__dict__
         except Exception:
             return self.__dict__
         my_dict = dict()
         for k, v in self.__dict__.items():
             if k in attrs:
-                my_dict[key] = v
+                my_dict[k] = v
         return my_dict
