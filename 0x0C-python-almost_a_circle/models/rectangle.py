@@ -22,7 +22,7 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         self.validation("width", value, False)
-        self.width = value
+        self.__width = value
 
     @property
     def height(self):
@@ -32,7 +32,7 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         self.validation("height", value, False)
-        self.height = value
+        self.__height = value
 
     @property
     def x(self):
@@ -42,7 +42,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         self.validation("x", value)
-        self.x = value
+        self.__x = value
 
     @property
     def y(self):
@@ -52,7 +52,7 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         self.validation("y", value)
-        self.y = value
+        self.__y = value
 
     def validation(self, name, value, eq=True):
         '''Validation method'''
